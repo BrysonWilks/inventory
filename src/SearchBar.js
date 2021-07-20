@@ -40,10 +40,6 @@ function SearchBar(props){
              onChange = {(e) => setBrand(e.target.value)}/>
 
       <button type = "button" onClick = {searchButtonPressed}>Search</button>
-      <p>Name: {name}</p>
-      <p>Price: {price}</p>
-      <p>Type: {type}</p>
-      <p>Brand: {brand}</p>
     </form>
     </div>
   );
