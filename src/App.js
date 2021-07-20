@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <p> Barebones react app </p>
       <Info title = "Inventory Application"></Info>
-      <AddItem text ="Bryson" number = {2}></AddItem>
+      <AddItem text ="Bryson" number = {2}></AddItem> // Passing in props
       <AddItem></AddItem>
       <AddItem></AddItem>
     </div>
@@ -24,7 +24,7 @@ function AddItem(props){
     </form>
   );
 }
-AddItem.defaultProps = {
+AddItem.defaultProps = { // creating defaultProps
   number: 0,
   text: "Nada"
 }
