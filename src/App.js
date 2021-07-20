@@ -1,7 +1,7 @@
 //import logo from './logo.svg';
 import './App.css';
 import Info from './Info.js';
-import { useState } from 'react';
+import { useState } from 'react'; //You have to use curly braces because useState is not a default Export
 
 /* Passing in props */
 function App() {
@@ -27,12 +27,24 @@ const updateCountClicked = () =>{
 
     return(
       <div>
-      <p> Title: {title} </p>
-      <p> Counter: {count} </p>
+      <Data title={title} count = {count}/>
       <button onClick = {updateTitleClicked}> Update Title </button>
       <button onClick = {updateCountClicked}> Update Counter </button>
       </div>
     );
+}
+
+function Data(props){
+  return(
+    <div>
+    <p>Title: {props.title} </p>
+    <p>Props: {props.count} </p>
+    </div>
+  );
+}
+Data.defaultProps = {
+  title : "no title passed in :( ",
+  count : 0
 }
 /*
 function AddItem(props){
