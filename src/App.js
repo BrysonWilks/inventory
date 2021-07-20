@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
-import Info from './Info.js';
+import Info from './Info.js'; // No curly braces here because Info is a default export
 import { useState } from 'react'; //You have to use curly braces because useState is not a default Export
 
 /* Passing in props */
